@@ -1,0 +1,15 @@
+To-do List App - Dynamic Parts of the UI
+
+- "Enter task here" textbox
+- Task due date selection box
+- Number of outstanding tasks (X in 'X to go')
+- Outstanding task rows - will move to bottom section if deleted or marked as done and additional ones will be added (with the user's input)
+- Number of completed tasks
+- Completed task row(s) - additional rows will be added if outstanding tasks are marked as done
+
+
+Potential issues
+
+- Is there a character limit for tasks? What happens if the user submits something that's multiple lines? 1000s of words?
+- What happens if users try to enter letters/symbols into the date field? Date validation required. Will the dd/mm/yy format cause issues for potential US users used to mm/dd/yy? Would displaying e.g. 01 Dec be more user-friendly than 01/12
+- If a user submits an exact duplicate task (task text + due date) should they be allowed/warned?

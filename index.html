@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Your Task List</title>
-    </head>
-    <body>
-        <h1>Your Tasks</h1>
-        <section class="new task">
-            <input type="text" name="taskname" placeholder="Enter task here...">
-            <input type="date">
-            <button type="button">+</button>
-        </section>
-        <section class="outstanding tasks">
-            <h2>Outstanding Tasks:</h2>
-            <p><b>2</b> to go!</p>
-            <table>
-                <tr>
-                    <td>Buy milk</td>
-                    <td>01/12/19</td>
-                    <td><button type="button">&#9989;</button></td>
-                    <td><button type="button"><b>&#128465;</b></button></td>
-                </tr>
-                <tr>
-                    <td>Finish coding homework</td>
-                    <td>03/12/19</td>
-                    <td><button type="button">&#9989;</button></td>
-                    <td><button type="button"><b>&#128465;</b></button></td>
-                </tr>
-            </table>
-        </section>
-        <section class="completed tasks">
-            <h2>Completed Tasks:</h2>
-            <p><b>1</b> completed!</p>
-            <table>
-                <tr>
-                    <td>Do laundry</td>
-                    <td>30/11/19</td>
-                </tr>
-            </table>
-        </section>
-    </body>
+
+<head>
+    <title>Your Task List</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat|Pacifico&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body id="mainBody">
+    <header class="pageHeader">
+        <h1 class="pageTitle">Your Tasks</h1>
+        <h2 class="pageSubtitle">You can do anything but you can't do everything</h2>
+    </header>
+    <section class="newTask">
+        <input type="text" name="taskname" placeholder="Enter task here...">
+        <input type="date">
+        <button type="button">+</button>
+    </section>
+    <section class="outstandingTasks">
+        <h2>Outstanding Tasks:</h2>
+        <p class="tasksToGo"><b>2</b> to go!</p>
+        <div class="gridContainerOutstanding">
+            <div class="gridItemOutstanding">Buy milk</div>
+            <div class="gridItemOutstanding">01/12/19</div>
+            <div class="gridItemOutstandingButtons"><button type="button">&#10004;</button><button type="button"><b>&#128465;</b></button></div>
+            <div class="gridItemOutstanding">Finish coding homework</div>
+            <div class="gridItemOutstanding">03/12/19</div>
+            <div class="gridItemOutstandingButtons"><button type="button">&#10004;</button><button type="button"><b>&#128465;</b></button></div>
+        </div>
+    </section>
+    <section class="completedTasks">
+        <h2>Completed Tasks:</h2>
+        <p class="tasksToGo"><b>1</b> completed!</p>
+        <div class="gridContainerCompleted">
+            <div class="gridItemCompleted">Do laundry</div>
+            <div class="gridItemCompleted">30/11/19</div>
+        </div>
+    </section>
+</body>
+
 </html>

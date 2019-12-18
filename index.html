@@ -3,6 +3,8 @@
 
 <head>
     <title>Your Task List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Montserrat|Pacifico&display=swap" rel="stylesheet">
 
@@ -10,35 +12,96 @@
 </head>
 
 <body id="mainBody">
-    <header class="pageHeader">
-        <h1 class="pageTitle">Your Tasks</h1>
-        <h2 class="pageSubtitle">You can do anything but you can't do everything</h2>
-    </header>
-    <section class="newTask">
-        <input type="text" name="taskname" placeholder="Enter task here...">
-        <input type="date">
-        <button type="button">+</button>
-    </section>
-    <section class="outstandingTasks">
-        <h2>Outstanding Tasks:</h2>
-        <p class="tasksToGo"><b>2</b> to go!</p>
-        <div class="gridContainerOutstanding">
+    <div>
+        <header class="pageHeader">
+            <h1 class="pageTitle">Your Tasks</h1>
+            <h2 class="pageSubtitle">You can do anything but you can't do everything</h2>
+        </header>
+    </div>
+    <div class="container">
+        <div class="row newTask">
+            <div class="col-6 text-right">
+                <input type="text" name="taskname" placeholder="Enter task here...">
+            </div>
+            <div class="col-6 text-left">
+                <input type="date">
+                <button type="button">+</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h2>Outstanding Tasks:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="tasksToGo"><b>2</b> to go!</p>
+            </div>
+        </div>
+        <div class="row gridContainerOutstanding">
+            <div class="col-12 col-md-8 gridItemOutstanding">
+                Buy milk
+            </div>
+            <div class="col-6 col-md-2 gridItemOutstanding">
+                01/12/19
+            </div>
+            <div class="col-6 col-md-2 gridItemOutstanding">
+                <button type="button">&#10004;</button>
+                <button type="button"><b>&#128465;</b></button>
+            </div>
+        </div>
+
+        <div class="row gridContainerOutstanding">
+            <div class="col-12 col-md-8 gridItemOutstanding">
+                Finish coding homework
+            </div>
+            <div class="col-6 col-md-2 gridItemOutstanding">
+                03/12/19
+            </div>
+            <div class="col-6 col-md-2 gridItemOutstanding">
+                <button type="button">&#10004;</button>
+                <button type="button"><b>&#128465;</b></button>
+            </div>
+        </div>
+
+        <div class="row">
+            <h2 class="col-12">Completed Tasks:</h2>
+        </div>
+        <div class="row">
+            <p class="tasksToGo col-12"><b>1</b> completed!</p>
+        </div>
+
+        <div class="row gridContainerCompleted">
+            <div class="col-8 gridItemCompleted">
+                Do laundry
+            </div>
+            <div class="col-4 gridItemCompleted">
+                30/11/19
+            </div>
+        </div>
+        <!-- <div class="gridContainerOutstanding">
             <div class="gridItemOutstanding">Buy milk</div>
             <div class="gridItemOutstanding">01/12/19</div>
-            <div class="gridItemOutstandingButtons"><button type="button">&#10004;</button><button type="button"><b>&#128465;</b></button></div>
+            <div class="gridItemOutstandingButtons"><button type="button">&#10004;</button><button
+                    type="button"><b>&#128465;</b></button></div>
             <div class="gridItemOutstanding">Finish coding homework</div>
             <div class="gridItemOutstanding">03/12/19</div>
-            <div class="gridItemOutstandingButtons"><button type="button">&#10004;</button><button type="button"><b>&#128465;</b></button></div>
-        </div>
-    </section>
-    <section class="completedTasks">
-        <h2>Completed Tasks:</h2>
-        <p class="tasksToGo"><b>1</b> completed!</p>
-        <div class="gridContainerCompleted">
-            <div class="gridItemCompleted">Do laundry</div>
-            <div class="gridItemCompleted">30/11/19</div>
-        </div>
-    </section>
+            <div class="gridItemOutstandingButtons"><button type="button">&#10004;</button><button
+                    type="button"><b>&#128465;</b></button></div>
+        </div> -->
+
+
+
+        <!-- <section class="completedTasks">
+            <h2>Completed Tasks:</h2>
+            <p class="tasksToGo"><b>1</b> completed!</p>
+            <div class="gridContainerCompleted">
+                <div class="gridItemCompleted">Do laundry</div>
+                <div class="gridItemCompleted">30/11/19</div>
+            </div>
+        </section> -->
+    </div>
 </body>
 
 </html>
